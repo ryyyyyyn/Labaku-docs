@@ -57,10 +57,10 @@ Semua dokumen proyek tersedia dalam format Markdown di folder `/docs/` berikut:
 
 ```bash
 # Clone repositori
-git clone https://github.com/PopOfficial/kalkulator-hpp.git
+git clone https://github.com/ryyyyyyn/Labaku-docs.git
 
 # Masuk ke direktori proyek
-cd kalkulator-hpp
+cd Labaku-docs
 
 # Jalankan aplikasi
 flutter pub get
