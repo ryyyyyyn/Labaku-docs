@@ -45,11 +45,11 @@ Semua dokumen proyek tersedia dalam format Markdown di folder `/docs/` berikut:
 
 | No | Dokumen | Deskripsi | Link |
 |----|----------|------------|------|
-| 01 | **Product Requirement Document (PRD)** | Menjelaskan visi, tujuan, kebutuhan fungsional dan non-fungsional aplikasi | [01_PRD.md](Labaku-docs/01_PRD.md) |
+| 01 | **Product Requirement Document (PRD)** | Menjelaskan visi, tujuan, kebutuhan fungsional dan non-fungsional aplikasi | [01_PRD.md](01_PRD.md) |
 | 02 | **Entity Relationship Diagram (ERD)** | Struktur basis data dan relasi antar entitas | [02_ERD.md](Labaku-docs/02_ERD.md) |
-| 03 | **Software Requirement Specification (SRS)** | Spesifikasi teknis kebutuhan sistem & batasan fungsional | [03_SRS.md](Labaku-docs/03_SRS.md) |
-| 04 | **Software Design Document (SDD)** | Desain arsitektur, komponen, diagram, dan alur sistem | [04_SDD.md](Labaku-docs/04_SDD.md) |
-| 05 | **Checklist & Timeline Sprint MVP** | Jadwal dan task pengembangan berbasis Agile Scrum | [05_Checklist_Timeline_Sprint_MVP.md](Labaku-/05_Checklist_Timeline_Sprint_MVP.md) |
+| 03 | **Software Requirement Specification (SRS)** | Spesifikasi teknis kebutuhan sistem & batasan fungsional | [03_SRS.md](03_SRS.md) |
+| 04 | **Software Design Document (SDD)** | Desain arsitektur, komponen, diagram, dan alur sistem | [04_SDD.md](04_SDD.md) |
+| 05 | **Checklist & Timeline Sprint MVP** | Jadwal dan task pengembangan berbasis Agile Scrum | [05_Checklist_Timeline_Sprint_MVP.md](05_Checklist_Timeline_Sprint_MVP.md) |
 
 ---
 
