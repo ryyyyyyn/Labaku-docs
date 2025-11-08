@@ -104,7 +104,6 @@ Copy code
 
 ```mermaid
 erDiagram
-
     USERSETTINGS {
         int id PK
         string theme_mode
@@ -138,10 +137,8 @@ erDiagram
         datetime updated_at
     }
 
-    USERSETTINGS ||--o{ CALCULATIONHISTORY : has
-    USERSETTINGS ||--|| APPINFO : owns
-
-
+    USERSETTINGS ||--o{ CALCULATIONHISTORY : "has many"
+    USERSETTINGS ||--|| APPINFO : "has one"
 Keamanan dan Privasi
 Semua data disimpan secara lokal di perangkat pengguna.
 
@@ -160,6 +157,6 @@ Database Lokal	Hive atau SharedPreferences
 Platform	Android dan iOS
 Mode Tampilan	Portrait (Mobile Only)
 
-## Kesimpulan
+Kesimpulan
 ERD ini dirancang untuk mendukung pengembangan aplikasi Kalkulator HPP + Laba Otomatis versi 1.0 dengan struktur data yang sederhana, efisien, dan siap diimplementasikan.
 Relasi antar entitas telah dioptimalkan agar kompatibel dengan penyimpanan lokal Flutter serta mudah dikembangkan lebih lanjut untuk versi premium dengan fitur tambahan seperti riwayat tanpa batas, export hasil ke PDF/Excel, dan tema warna kustom.
