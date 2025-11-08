@@ -52,6 +52,8 @@ Semua dokumen proyek tersedia dalam format Markdown di folder `/docs/` berikut:
 | 05 | **Checklist & Timeline Sprint MVP** | Jadwal dan task pengembangan berbasis Agile Scrum | [05_Checklist_Timeline_Sprint_MVP.md](05_Checklist_Timeline_Sprint_MVP.md) |
 
 ---
+## hasil desain lofi dan ui / ux 
+ https://github.com/221240001241-hue
 
 ## Cara Menjalankan Proyek
 
