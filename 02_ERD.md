@@ -140,7 +140,7 @@ erDiagram
 
     USERSETTINGS ||--o{ CALCULATIONHISTORY : has
     USERSETTINGS ||--|| APPINFO : owns
-    };
+
 
 Keamanan dan Privasi
 Semua data disimpan secara lokal di perangkat pengguna.
