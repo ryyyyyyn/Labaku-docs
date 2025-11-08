@@ -1,4 +1,4 @@
-** Product Requirement Document (PRD)
+Product Requirement Document (PRD)
 Nama Produk
 
 Kalkulator HPP + Laba Otomatis
@@ -7,13 +7,15 @@ Platform: Mobile (Flutter – Android & iOS)
 Owner: Ryan (221240001281)
 System Analyst: Niam (221240001241)
 
- Tujuan Utama
+Tujuan Utama
 
-Membantu penjual online, reseller, dan pelaku UMKM menghitung Harga Pokok Penjualan (HPP) dan laba bersih secara otomatis, cepat, dan akurat tanpa memerlukan rumus rumit.
+Aplikasi ini membantu penjual online, reseller, dan pelaku UMKM menghitung Harga Pokok Penjualan (HPP) dan laba bersih secara otomatis, cepat, dan akurat tanpa memerlukan rumus rumit.
 
- Tujuan Produk
+Tujuan Produk
 
 Aplikasi ini bertujuan untuk mempermudah pengguna dalam menentukan harga jual ideal hanya dengan beberapa input sederhana:
+
+Input:
 
 Harga produk
 
@@ -39,48 +41,46 @@ Total_HPP = Harga_Produk + Ongkir + Biaya_Packing + (Harga_Produk × Biaya_Admin
 Harga_Jual = Total_HPP + (Total_HPP × Margin / 100)
 Laba_Bersih = Harga_Jual - Total_HPP
 
- Target Pengguna
+Target Pengguna
 Segmen	Deskripsi
 UMKM	Penjual kecil di Shopee, Tokopedia, atau Tiktok Shop
 Dropshipper / Reseller	Menentukan harga jual dari supplier
 Online Seller Pemula	Baru belajar cara hitung laba
 Pelajar & Mahasiswa	Belajar konsep dasar HPP & margin
- Value Proposition
+Value Proposition
 Masalah Pengguna	Solusi Aplikasi
-Bingung menentukan harga jual	Perhitungan otomatis & akurat
-Salah hitung manual	Rumus konsisten & tepat
-Tidak ada alat sederhana	UI minimalis, ringan & offline
-Ingin simpan hasil	Riwayat otomatis & ekspor data
-
- Fitur Utama
-
-Kalkulator HPP (Fitur Inti)
+Bingung menentukan harga jual	Perhitungan otomatis dan akurat
+Salah hitung manual	Rumus konsisten dan tepat
+Tidak ada alat sederhana	UI minimalis, ringan, dan offline
+Ingin simpan hasil	Riwayat otomatis dan ekspor data
+Fitur Utama
+1. Kalkulator HPP (Fitur Inti)
 
 Input: harga produk, ongkir, admin, packing, margin
 
 Output: Total HPP, harga jual, laba bersih
 
-Tombol “Hitung” & “Simpan Hasil”
+Tombol “Hitung” dan “Simpan Hasil”
 
-Riwayat Perhitungan
+2. Riwayat Perhitungan
 
 Menyimpan hasil perhitungan (tanggal & nama produk)
 
 Dapat dilihat, diedit, dan dihapus kapan saja
 
-Detail Perhitungan
+3. Detail Perhitungan
 
 Menampilkan data lengkap dari setiap perhitungan
 
 Tombol edit & simpan ulang
 
-Onboarding Page (3 Slide)
+4. Onboarding Page (3 Slide)
 
 Edukasi singkat fungsi aplikasi
 
 Tombol “Mulai Sekarang”
 
-Pengaturan (Settings)
+5. Pengaturan (Settings)
 
 Tema terang/gelap
 
@@ -90,18 +90,18 @@ Hapus semua data
 
 Informasi versi aplikasi
 
-Tentang Aplikasi
+6. Tentang Aplikasi
 
-Logo, deskripsi singkat, kontak developer
+Logo, deskripsi singkat, dan kontak developer
 
 “Dibuat oleh Ryan (PopOfficialStore)”
 
- Fitur Monetisasi (Tanpa Iklan)
+Fitur Monetisasi (Tanpa Iklan)
 
 Aplikasi menggunakan sistem Freemium Unlock (One-Time Payment),
 di mana fitur dasar tersedia gratis, dan fitur lanjutan dapat dibuka dengan pembayaran sekali seumur hidup (one-time purchase).
 
- Versi Gratis
+Versi Gratis
 
 Fokus pada kemudahan penggunaan dan edukasi dasar.
 
@@ -117,11 +117,11 @@ Hapus semua data
 
 Gunakan secara offline tanpa batas waktu
 
-** Versi Premium (Unlock Sekali Bayar)
+Versi Premium (Unlock Sekali Bayar)
 
 Pengguna dapat meng-upgrade ke versi premium dengan pembayaran sekali saja (Rp20.000 – Rp25.000) dan membuka seluruh fitur lanjutan berikut:
 
-** Fitur yang Di-Unlock Premium:
+Fitur yang Di-Unlock Premium:
 
 Simpan Riwayat Tanpa Batas
 Tidak ada batasan jumlah riwayat perhitungan.
@@ -160,7 +160,7 @@ Semua fitur dapat digunakan penuh.
 
 Tidak ada iklan, limit, atau batasan waktu.
 
-** Perbandingan Versi
+Perbandingan Versi
 Fitur	Gratis	Premium
 Kalkulator dasar	✅	✅
 Simpan riwayat	Maks. 5 data	Tanpa batas
@@ -172,14 +172,14 @@ Backup & restore lokal	❌	✅
 Hapus semua data	✅	✅
 Tanpa iklan	✅	✅
 Semua fitur tanpa batas	❌	✅
-🗺️ User Flow
+User Flow
 Splash → Onboarding → Kalkulator → Hasil → Simpan Riwayat
 ↓
 Riwayat → Detail → Edit / Hapus
 ↓
 Pengaturan / Tentang / Upgrade Premium
 
-** Struktur Halaman
+Struktur Halaman
 Halaman	Komponen Utama	Aksi
 Splash	Logo + tagline	Auto ke Onboarding
 Onboarding	3 slide edukatif	“Mulai Sekarang”
@@ -189,7 +189,7 @@ Detail	Rincian hasil	Edit / Simpan ulang
 Pengaturan	Tema, warna, reset data	Ubah preferensi
 Tentang	Logo, deskripsi, kontak	Info developer
 Premium Unlock	Deskripsi fitur premium	Tombol “Upgrade Sekarang”
-** UI/UX Requirements
+UI/UX Requirements
 
 Warna utama: Oranye (#FF6F00)
 
@@ -207,7 +207,7 @@ Mode: 100% offline
 
 Desain: Simple, profesional, dan ringan
 
-** Spesifikasi Teknis
+Spesifikasi Teknis
 Aspek	Spesifikasi
 Framework	Flutter 3+
 Bahasa	Dart
@@ -216,22 +216,22 @@ Database Lokal	Hive / SharedPreferences
 API	Tidak diperlukan (Offline)
 Platform	Android & iOS
 Mode Tampilan	Portrait Only
-** Keamanan & Privasi
+Keamanan & Privasi
 
 Semua data disimpan lokal di perangkat pengguna
 
 Tidak ada login, akun, atau data dikirim ke server
 
-Pengguna bisa hapus seluruh data kapan saja
+Pengguna dapat menghapus seluruh data kapan saja
 
-** Roadmap Versi
+Roadmap Versi
 Versi	Deskripsi	Status
 v1.0	Kalkulator + Riwayat lokal	Rilis awal
 v1.1	Export PDF / Excel + Tema Gelap	Premium unlock
 v1.2	Template Biaya Otomatis	Premium unlock
 v1.3	Backup & Restore Lokal	Premium unlock
 v2.0	UI baru + optimasi performa	Update besar
-** KPI Keberhasilan
+KPI Keberhasilan
 
 ≥ 1.000 unduhan dalam 3 bulan
 
@@ -243,14 +243,14 @@ Rating aplikasi ≥ 4.5/5 di Play Store
 
 Rata-rata waktu penggunaan < 3 menit
 
-** Tim Pengembang
+Tim Pengembang
 Peran	Nama	NIM
 Product Owner	Ryan	221240001281
 System Analyst	Niam	221240001241
 Flutter Developer	Ryan / Freelance	-
 UI/UX Designer	Opsional	-
 QA Tester	Opsional	-
-** Deliverables
+Deliverables
 
 Desain UI/UX (Figma)
 
@@ -262,7 +262,7 @@ Dokumen PRD (ini)
 
 File APK Beta (Android)
 
-** Kesimpulan
+Kesimpulan
 
 Aplikasi Kalkulator HPP + Laba Otomatis hadir sebagai solusi cepat, sederhana, dan profesional bagi penjual online serta pelaku UMKM.
 Dengan pendekatan tanpa iklan dan sistem unlock fitur premium sekali bayar, aplikasi ini menjaga kenyamanan pengguna sambil tetap memiliki potensi penghasilan berkelanjutan.
