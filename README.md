@@ -53,7 +53,8 @@ Semua dokumen proyek tersedia dalam format Markdown di folder `/docs/` berikut:
 
 ---
 ## hasil desain lofi dan ui / ux 
-https://221240001241-hue.github.io/aplikasi-pencatatan-usaha
+
+https://ryanapps.space.z.ai/
 
 ## Cara Menjalankan Proyek
 
