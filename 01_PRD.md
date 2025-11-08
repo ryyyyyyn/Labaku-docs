@@ -1,4 +1,4 @@
-Product Requirement Document (PRD)
+## Product Requirement Document (PRD)
 Nama Produk
 
 Kalkulator HPP + Laba Otomatis
@@ -7,11 +7,11 @@ Platform: Mobile (Flutter – Android & iOS)
 Owner: Ryan (221240001281)
 System Analyst: Niam (221240001241)
 
-Tujuan Utama
+## Tujuan Utama
 
 Aplikasi ini membantu penjual online, reseller, dan pelaku UMKM menghitung Harga Pokok Penjualan (HPP) dan laba bersih secara otomatis, cepat, dan akurat tanpa memerlukan rumus rumit.
 
-Tujuan Produk
+## Tujuan Produk
 
 Aplikasi ini bertujuan untuk mempermudah pengguna dalam menentukan harga jual ideal hanya dengan beberapa input sederhana:
 
@@ -35,13 +35,13 @@ Harga jual ideal
 
 Estimasi laba bersih
 
-Formula Dasar:
+# Formula Dasar:
 
 Total_HPP = Harga_Produk + Ongkir + Biaya_Packing + (Harga_Produk × Biaya_Admin / 100)
 Harga_Jual = Total_HPP + (Total_HPP × Margin / 100)
 Laba_Bersih = Harga_Jual - Total_HPP
 
-Target Pengguna
+# Target Pengguna
 Segmen	Deskripsi
 UMKM	Penjual kecil di Shopee, Tokopedia, atau Tiktok Shop
 Dropshipper / Reseller	Menentukan harga jual dari supplier
@@ -53,7 +53,8 @@ Bingung menentukan harga jual	Perhitungan otomatis dan akurat
 Salah hitung manual	Rumus konsisten dan tepat
 Tidak ada alat sederhana	UI minimalis, ringan, dan offline
 Ingin simpan hasil	Riwayat otomatis dan ekspor data
-Fitur Utama
+
+# Fitur Utama
 1. Kalkulator HPP (Fitur Inti)
 
 Input: harga produk, ongkir, admin, packing, margin
@@ -94,7 +95,7 @@ Informasi versi aplikasi
 
 Logo, deskripsi singkat, dan kontak developer
 
-“Dibuat oleh Ryan (PopOfficialStore)”
+“Dibuat oleh Ryan ”
 
 Fitur Monetisasi (Tanpa Iklan)
 
@@ -160,7 +161,8 @@ Semua fitur dapat digunakan penuh.
 
 Tidak ada iklan, limit, atau batasan waktu.
 
-Perbandingan Versi
+## Perbandingan Versi
+
 Fitur	Gratis	Premium
 Kalkulator dasar	✅	✅
 Simpan riwayat	Maks. 5 data	Tanpa batas
@@ -179,7 +181,8 @@ Riwayat → Detail → Edit / Hapus
 ↓
 Pengaturan / Tentang / Upgrade Premium
 
-Struktur Halaman
+## Struktur Halaman
+
 Halaman	Komponen Utama	Aksi
 Splash	Logo + tagline	Auto ke Onboarding
 Onboarding	3 slide edukatif	“Mulai Sekarang”
@@ -224,7 +227,7 @@ Tidak ada login, akun, atau data dikirim ke server
 
 Pengguna dapat menghapus seluruh data kapan saja
 
-Roadmap Versi
+## Roadmap Versi
 Versi	Deskripsi	Status
 v1.0	Kalkulator + Riwayat lokal	Rilis awal
 v1.1	Export PDF / Excel + Tema Gelap	Premium unlock
@@ -243,7 +246,7 @@ Rating aplikasi ≥ 4.5/5 di Play Store
 
 Rata-rata waktu penggunaan < 3 menit
 
-Tim Pengembang
+## Tim Pengembang
 Peran	Nama	NIM
 Product Owner	Ryan	221240001281
 System Analyst	Niam	221240001241
@@ -262,7 +265,7 @@ Dokumen PRD (ini)
 
 File APK Beta (Android)
 
-Kesimpulan
+## Kesimpulan
 
 Aplikasi Kalkulator HPP + Laba Otomatis hadir sebagai solusi cepat, sederhana, dan profesional bagi penjual online serta pelaku UMKM.
 Dengan pendekatan tanpa iklan dan sistem unlock fitur premium sekali bayar, aplikasi ini menjaga kenyamanan pengguna sambil tetap memiliki potensi penghasilan berkelanjutan.
