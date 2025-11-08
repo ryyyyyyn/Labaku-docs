@@ -100,46 +100,71 @@ Copy code
 
 ---
 
-## ERD Visual (Mermaid Diagram)
-
-```mermaid
 erDiagram
-    USERSETTINGS {
+    USER {
         int id PK
-        string theme_mode
-        string primary_color
-        bool onboarding_done
-        string language
-        string currency_format
-        datetime last_updated
-    }
-
-    CALCULATIONHISTORY {
-        string id PK
-        string product_name
-        double harga_produk
-        double ongkir
-        double biaya_admin
-        double biaya_packing
-        double margin
-        double total_hpp
-        double harga_jual
-        double laba_bersih
-        datetime timestamp
-        int user_setting_id FK
-    }
-
-    APPINFO {
-        int id PK
-        string version_name
-        string build_number
+        string name
+        string email
+        string password
         datetime created_at
         datetime updated_at
     }
 
-    USERSETTINGS ||--o{ CALCULATIONHISTORY : "has many"
-    USERSETTINGS ||--|| APPINFO : "has one"
-Keamanan dan Privasi
+    HISTORY {
+        int id PK
+        int user_id FK
+        string product_name
+        decimal harga_modal
+        decimal biaya_packing
+        decimal biaya_admin
+        decimal total_hpp
+        decimal harga_jual
+        decimal laba
+        datetime created_at
+    }
+
+    TEMPLATE {
+        int id PK
+        int user_id FK
+        string platform_name
+        decimal biaya_admin_persen
+        datetime created_at
+    }
+
+    SETTINGS {
+        int id PK
+        int user_id FK
+        string theme_color
+        boolean unlimited_history
+        boolean export_pdf_excel
+        boolean template_auto
+        boolean backup_restore
+        boolean all_features_unlocked
+        datetime created_at
+    }
+
+    BACKUP {
+        int id PK
+        int user_id FK
+        string file_path
+        datetime created_at
+    }
+
+    USER ||--o{ HISTORY : "memiliki banyak"
+    USER ||--o{ TEMPLATE : "memiliki banyak"
+    USER ||--o{ SETTINGS : "memiliki satu"
+    USER ||--o{ BACKUP : "memiliki banyak"
+"---
+
+## Penjelasan Singkat Struktur:
+Entitas	Deskripsi
+USER	Menyimpan data pengguna aplikasi.
+HISTORY	Menyimpan riwayat perhitungan HPP & laba pengguna.
+TEMPLATE	Menyimpan template biaya admin otomatis (Shopee, Tokopedia, dll).
+SETTINGS	Menyimpan preferensi pengguna, termasuk fitur yang di-unlock.
+BACKUP	Menyimpan data file hasil backup/restore lokal. \
+
+## Keamanan dan Privasi
 Semua data disimpan secara lokal di perangkat pengguna.
 
 Tidak ada proses login maupun data pribadi yang dikumpulkan.
@@ -148,7 +173,7 @@ Pengguna dapat menghapus seluruh data riwayat dari menu pengaturan.
 
 Backup dan restore dapat dilakukan secara manual melalui file lokal.
 
-Teknologi yang Digunakan
+## Teknologi yang Digunakan
 Komponen	Teknologi
 Framework	Flutter 3+
 Bahasa Pemrograman	Dart
@@ -157,6 +182,6 @@ Database Lokal	Hive atau SharedPreferences
 Platform	Android dan iOS
 Mode Tampilan	Portrait (Mobile Only)
 
-Kesimpulan
+## Kesimpulan
 ERD ini dirancang untuk mendukung pengembangan aplikasi Kalkulator HPP + Laba Otomatis versi 1.0 dengan struktur data yang sederhana, efisien, dan siap diimplementasikan.
 Relasi antar entitas telah dioptimalkan agar kompatibel dengan penyimpanan lokal Flutter serta mudah dikembangkan lebih lanjut untuk versi premium dengan fitur tambahan seperti riwayat tanpa batas, export hasil ke PDF/Excel, dan tema warna kustom.
