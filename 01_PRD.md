@@ -1,199 +1,273 @@
-# Product Requirement Document (PRD)
+** Product Requirement Document (PRD)
+Nama Produk
 
-##  Nama Produk  
-**Kalkulator HPP + Laba Otomatis**
+Kalkulator HPP + Laba Otomatis
 
-**Platform:** Mobile (Flutter – Android & iOS)  
-**Owner:** Ryan (221240001281)  
-**System Analyst:** Niam (221240001241)
+Platform: Mobile (Flutter – Android & iOS)
+Owner: Ryan (221240001281)
+System Analyst: Niam (221240001241)
 
----
+ Tujuan Utama
 
-##  Tujuan Utama  
-Membantu penjual online dan UMKM menghitung **Harga Pokok Penjualan (HPP)** dan **laba bersih** secara cepat, otomatis, dan akurat tanpa perlu rumus akuntansi.
+Membantu penjual online, reseller, dan pelaku UMKM menghitung Harga Pokok Penjualan (HPP) dan laba bersih secara otomatis, cepat, dan akurat tanpa memerlukan rumus rumit.
 
----
+ Tujuan Produk
 
-##  Tujuan Produk  
-Aplikasi ini menyederhanakan proses menghitung harga jual ideal. Pengguna cukup memasukkan:
-- Harga produk  
-- Ongkir  
-- Biaya admin (%)  
-- Biaya packing  
-- Margin keuntungan (%)  
+Aplikasi ini bertujuan untuk mempermudah pengguna dalam menentukan harga jual ideal hanya dengan beberapa input sederhana:
+
+Harga produk
+
+Ongkir
+
+Biaya admin (%)
+
+Biaya packing
+
+Margin keuntungan (%)
 
 Output otomatis:
-- Total HPP  
-- Harga jual ideal  
-- Estimasi laba bersih  
 
-**Formula:**  
+Total HPP
+
+Harga jual ideal
+
+Estimasi laba bersih
+
+Formula Dasar:
+
 Total_HPP = Harga_Produk + Ongkir + Biaya_Packing + (Harga_Produk × Biaya_Admin / 100)
 Harga_Jual = Total_HPP + (Total_HPP × Margin / 100)
 Laba_Bersih = Harga_Jual - Total_HPP
 
-yaml
-Copy code
+ Target Pengguna
+Segmen	Deskripsi
+UMKM	Penjual kecil di Shopee, Tokopedia, atau Tiktok Shop
+Dropshipper / Reseller	Menentukan harga jual dari supplier
+Online Seller Pemula	Baru belajar cara hitung laba
+Pelajar & Mahasiswa	Belajar konsep dasar HPP & margin
+ Value Proposition
+Masalah Pengguna	Solusi Aplikasi
+Bingung menentukan harga jual	Perhitungan otomatis & akurat
+Salah hitung manual	Rumus konsisten & tepat
+Tidak ada alat sederhana	UI minimalis, ringan & offline
+Ingin simpan hasil	Riwayat otomatis & ekspor data
 
----
+ Fitur Utama
 
-##  Target Pengguna
+Kalkulator HPP (Fitur Inti)
 
-| Segmen | Deskripsi |
-|---------|------------|
-| UMKM | Penjual kecil di Shopee, Tokopedia, atau offline store |
-| Dropshipper & Reseller | Menentukan harga jual dari supplier |
-| Online Seller Pemula | Belum memahami cara menghitung laba |
-| Pelajar & Mahasiswa | Untuk pembelajaran konsep HPP dan laba |
+Input: harga produk, ongkir, admin, packing, margin
 
----
+Output: Total HPP, harga jual, laba bersih
 
-##  Value Proposition
+Tombol “Hitung” & “Simpan Hasil”
 
-| Masalah Pengguna | Solusi Aplikasi |
-|------------------|----------------|
-| Bingung menentukan harga jual | Perhitungan otomatis & instan |
-| Salah hitung manual | Formula akurat dan konsisten |
-| Tidak ada alat sederhana | UI minimalis, cepat, dan offline |
+Riwayat Perhitungan
 
----
+Menyimpan hasil perhitungan (tanggal & nama produk)
 
-## Fitur Utama
+Dapat dilihat, diedit, dan dihapus kapan saja
 
-1. **Kalkulator HPP (Fitur Utama)**  
-   - Input: Harga produk, ongkir, biaya admin, packing, margin  
-   - Output: Total HPP, harga jual, laba bersih  
+Detail Perhitungan
 
-2. **Riwayat Perhitungan**  
-   - Simpan hasil (tanggal, produk, nilai)  
-   - Lihat dan hapus riwayat  
+Menampilkan data lengkap dari setiap perhitungan
 
-3. **Detail Perhitungan**  
-   - Tampilkan input & hasil  
-   - Tombol edit & simpan ulang  
+Tombol edit & simpan ulang
 
-4. **Onboarding Page**  
-   - 3 slide edukatif + tombol “Mulai Sekarang”  
+Onboarding Page (3 Slide)
 
-5. **Pengaturan Aplikasi**  
-   - Tema terang/gelap  
-   - Ganti warna utama  
-   - Info versi & pembuat  
+Edukasi singkat fungsi aplikasi
 
-6. **Tentang Aplikasi**  
-   - Logo, deskripsi singkat  
-   - Kontak: “Dibuat oleh Ryan (PopOfficialStore)”
+Tombol “Mulai Sekarang”
 
----
+Pengaturan (Settings)
 
-##  User Flow
+Tema terang/gelap
 
-Splash → Onboarding → Kalkulator HPP → Hasil → Simpan Riwayat
+Ganti warna utama
+
+Hapus semua data
+
+Informasi versi aplikasi
+
+Tentang Aplikasi
+
+Logo, deskripsi singkat, kontak developer
+
+“Dibuat oleh Ryan (PopOfficialStore)”
+
+ Fitur Monetisasi (Tanpa Iklan)
+
+Aplikasi menggunakan sistem Freemium Unlock (One-Time Payment),
+di mana fitur dasar tersedia gratis, dan fitur lanjutan dapat dibuka dengan pembayaran sekali seumur hidup (one-time purchase).
+
+ Versi Gratis
+
+Fokus pada kemudahan penggunaan dan edukasi dasar.
+
+Termasuk:
+
+Kalkulator dasar
+
+Simpan hingga 5 riwayat perhitungan
+
+Tema terang & gelap
+
+Hapus semua data
+
+Gunakan secara offline tanpa batas waktu
+
+** Versi Premium (Unlock Sekali Bayar)
+
+Pengguna dapat meng-upgrade ke versi premium dengan pembayaran sekali saja (Rp20.000 – Rp25.000) dan membuka seluruh fitur lanjutan berikut:
+
+** Fitur yang Di-Unlock Premium:
+
+Simpan Riwayat Tanpa Batas
+Tidak ada batasan jumlah riwayat perhitungan.
+
+Export Hasil ke PDF / Excel
+
+Simpan laporan perhitungan ke file .pdf atau .xlsx.
+
+Cocok untuk laporan keuangan atau rekap penjualan.
+
+Template Biaya Otomatis
+
+Pilihan marketplace dengan biaya admin otomatis:
+
+Shopee (5%)
+
+Tokopedia (6%)
+
+Tiktok Shop (7%)
+
+Custom manual
+
+Ganti Warna Tema Bebas
+
+Pilih warna utama sesuai selera (misal oranye, biru, hijau).
+
+Backup & Restore Lokal (File)
+
+Simpan data riwayat ke file lokal .json / .txt.
+
+Restore ulang saat ganti HP tanpa kehilangan data.
+
+Tidak Ada Batasan Fitur
+
+Semua fitur dapat digunakan penuh.
+
+Tidak ada iklan, limit, atau batasan waktu.
+
+** Perbandingan Versi
+Fitur	Gratis	Premium
+Kalkulator dasar	✅	✅
+Simpan riwayat	Maks. 5 data	Tanpa batas
+Export ke PDF / Excel	❌	✅
+Tema terang / gelap	✅	✅
+Ganti warna tema bebas	❌	✅
+Template biaya otomatis	❌	✅
+Backup & restore lokal	❌	✅
+Hapus semua data	✅	✅
+Tanpa iklan	✅	✅
+Semua fitur tanpa batas	❌	✅
+🗺️ User Flow
+Splash → Onboarding → Kalkulator → Hasil → Simpan Riwayat
 ↓
 Riwayat → Detail → Edit / Hapus
 ↓
-Pengaturan / Tentang
+Pengaturan / Tentang / Upgrade Premium
 
-yaml
-Copy code
+** Struktur Halaman
+Halaman	Komponen Utama	Aksi
+Splash	Logo + tagline	Auto ke Onboarding
+Onboarding	3 slide edukatif	“Mulai Sekarang”
+Kalkulator	Input field + hasil card	Hitung & Simpan
+Riwayat	List hasil tersimpan	Detail / Hapus
+Detail	Rincian hasil	Edit / Simpan ulang
+Pengaturan	Tema, warna, reset data	Ubah preferensi
+Tentang	Logo, deskripsi, kontak	Info developer
+Premium Unlock	Deskripsi fitur premium	Tombol “Upgrade Sekarang”
+** UI/UX Requirements
 
----
+Warna utama: Oranye (#FF6F00)
 
-##  Struktur Halaman
+Font: Poppins / Inter
 
-| Halaman | Komponen | Aksi Utama |
-|----------|-----------|------------|
-| Splash | Logo + tagline | Auto ke onboarding |
-| Onboarding | Slide edukatif | Tombol "Mulai Sekarang" |
-| Kalkulator | Input + hasil card | Hitung & simpan |
-| Riwayat | List card hasil | Detail & hapus |
-| Detail | Data lengkap | Edit / Simpan |
-| Pengaturan | Tema, warna, info | Ubah preferensi |
-| Tentang | Logo, deskripsi, kontak | Info developer |
+Ikon: Flat minimalis
 
----
+Animasi: Transisi lembut antarhalaman
 
-## UI/UX Requirements
+Format angka: Otomatis dalam Rupiah
 
-- Warna utama: **Oranye (#FF6F00)**  
-- Font: **Poppins / Inter**  
-- Gaya ikon: Flat minimal  
-- Fokus satu halaman utama  
-- Tombol besar & mudah dijangkau  
-- Format angka otomatis ke Rupiah  
-- Animasi transisi lembut  
-- Tidak perlu login  
+Tombol: Besar & mudah dijangkau
 
----
+Mode: 100% offline
 
-##  Spesifikasi Teknis
+Desain: Simple, profesional, dan ringan
 
-| Aspek | Spesifikasi |
-|--------|--------------|
-| Framework | Flutter 3+ |
-| Bahasa | Dart |
-| State Management | Riverpod / Provider |
-| Database Lokal | Hive / SharedPreferences |
-| API | Tidak diperlukan (Offline First) |
-| Platform | Android & iOS |
-| Mode | Portrait (Mobile) |
+** Spesifikasi Teknis
+Aspek	Spesifikasi
+Framework	Flutter 3+
+Bahasa	Dart
+State Management	Riverpod / Provider
+Database Lokal	Hive / SharedPreferences
+API	Tidak diperlukan (Offline)
+Platform	Android & iOS
+Mode Tampilan	Portrait Only
+** Keamanan & Privasi
 
----
+Semua data disimpan lokal di perangkat pengguna
 
-##  Keamanan & Privasi
+Tidak ada login, akun, atau data dikirim ke server
 
-- Data disimpan **lokal** (tidak dikirim ke server)  
-- Tidak ada login / pengumpulan data pribadi  
-- Opsi **hapus semua data** di pengaturan  
+Pengguna bisa hapus seluruh data kapan saja
 
----
+** Roadmap Versi
+Versi	Deskripsi	Status
+v1.0	Kalkulator + Riwayat lokal	Rilis awal
+v1.1	Export PDF / Excel + Tema Gelap	Premium unlock
+v1.2	Template Biaya Otomatis	Premium unlock
+v1.3	Backup & Restore Lokal	Premium unlock
+v2.0	UI baru + optimasi performa	Update besar
+** KPI Keberhasilan
 
-## Roadmap Versi
+≥ 1.000 unduhan dalam 3 bulan
 
-| Versi | Deskripsi | Status |
-|--------|------------|--------|
-| v1.0 | Kalkulator + Riwayat lokal | Target awal |
-| v1.1 | Tema gelap + Export PDF | Setelah rilis |
-| v1.2 | Cloud sync opsional | Fitur lanjutan |
-| v2.0 | AI Pricing Analysis | Fase pengembangan lanjut |
+≥ 80% pengguna aktif mingguan
 
----
+≥ 10% pengguna upgrade ke Premium
 
-##  KPI Keberhasilan
+Rating aplikasi ≥ 4.5/5 di Play Store
 
-- ≥ 1000 unduhan dalam 3 bulan  
-- 80% pengguna aktif mingguan  
-- Waktu penggunaan rata-rata < 3 menit  
-- Rating ≥ 4.5/5 di Play Store  
+Rata-rata waktu penggunaan < 3 menit
 
----
+** Tim Pengembang
+Peran	Nama	NIM
+Product Owner	Ryan	221240001281
+System Analyst	Niam	221240001241
+Flutter Developer	Ryan / Freelance	-
+UI/UX Designer	Opsional	-
+QA Tester	Opsional	-
+** Deliverables
 
-##  Tim Proyek
+Desain UI/UX (Figma)
 
-| Peran | Nama | NIM |
-|--------|------|-----|
-| Product Owner | Ryan | 221240001281 |
-| System Analyst | Niam | 221240001241 |
-| Flutter Dev | Ryan / Freelance | - |
-| QA Tester | Opsional | - |
+Source code Flutter (.dart)
 
----
+Ikon & Logo aplikasi
 
-##  Deliverables
+Dokumen PRD (ini)
 
-- Desain UI/UX (Figma)  
-- Source code Flutter (`.dart`)  
-- File ikon & logo  
-- Dokumen PRD ini  
-- APK versi Beta  
+File APK Beta (Android)
 
----
+** Kesimpulan
 
-##  Kesimpulan
+Aplikasi Kalkulator HPP + Laba Otomatis hadir sebagai solusi cepat, sederhana, dan profesional bagi penjual online serta pelaku UMKM.
+Dengan pendekatan tanpa iklan dan sistem unlock fitur premium sekali bayar, aplikasi ini menjaga kenyamanan pengguna sambil tetap memiliki potensi penghasilan berkelanjutan.
 
-Aplikasi **Kalkulator HPP + Laba Otomatis** dirancang untuk menjadi alat bantu cepat, akurat, dan ringan bagi UMKM dan penjual online. Fokus utama aplikasi ini adalah **efisiensi & kemudahan**, agar pengguna dapat menentukan harga jual ideal hanya dalam beberapa detik — tanpa rumus rumit.
+Fokus utama aplikasi ini adalah kemudahan, efisiensi, dan keakuratan, agar pengguna dapat menentukan harga jual ideal hanya dalam hitungan detik — tanpa rumus, tanpa ribet.
 
----
-
-> © 2025 Kalkulator HPP + Laba Otomatis — Dikembangkan oleh Ryan & Niam.  
-> Semua hak cipta dilindungi.
+© 2025 Kalkulator HPP + Laba Otomatis — Dikembangkan oleh Ryan & Niam.
+Semua hak cipta dilindungi.
